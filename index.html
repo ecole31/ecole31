@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ecole31 — Tutoriels pratiques en développement, data, IA, DevOps et outils professionnels.">
+  <title>Ecole31 — Tutoriels pratiques</title>
+
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --surface: #ffffff;
+      --text: #172033;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --tag-bg: #eff6ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 56px 20px 52px;
+    }
+
+    .header-content {
+      max-width: 1050px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #93c5fd;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(32px, 5vw, 48px);
+      line-height: 1.1;
+      letter-spacing: -1px;
+    }
+
+    .intro {
+      max-width: 700px;
+      margin: 18px 0 0;
+      color: #cbd5e1;
+      font-size: 18px;
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 48px 20px 70px;
+    }
+
+    .section {
+      margin-bottom: 44px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      font-size: 23px;
+    }
+
+    .section-title::before {
+      content: "";
+      width: 4px;
+      height: 24px;
+      background: var(--primary);
+      border-radius: 4px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      display: block;
+      padding: 23px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform .18s ease, box-shadow .18s ease,
+                  border-color .18s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #bfdbfe;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, .07);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 9px;
+      margin-bottom: 11px;
+      border-radius: 6px;
+      background: var(--tag-bg);
+      color: var(--primary-dark);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .card h3 {
+      margin: 0 0 7px;
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .arrow {
+      display: block;
+      margin-top: 15px;
+      color: var(--primary);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 28px 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        padding: 42px 20px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      main {
+        padding-top: 35px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="logo">Ecole31 · Formation &amp; pratique</div>
+
+```
+  <h1>Tutoriels pratiques</h1>
+
+  <p class="intro">
+    Des guides techniques conçus pour apprendre, expérimenter
+    et mettre rapidement en pratique les outils du développement,
+    de la data, de l'IA et du DevOps.
+  </p>
+</div>
+```
+
+  </header>
+
+  <main>
+
+```
+<!-- TULEAP -->
+<section class="section">
+  <h2 class="section-title">Tuleap</h2>
+
+  <div class="grid">
+
+    <a class="card" href="tuleap-gitlab-sync.html">
+      <span class="tag">TULEAP · GITLAB</span>
+      <h3>Synchroniser ses issues GitLab avec Tuleap</h3>
+      <p>
+        Mettre en place une synchronisation automatique entre
+        GitLab et Tuleap à l'aide d'une intégration Webhook et API.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+    <a class="card" href="tuleap-tql-regex.html">
+      <span class="tag">TULEAP · TQL</span>
+      <h3>Maîtriser TQL et les expressions régulières avancées</h3>
+      <p>
+        Construire des requêtes TQL efficaces et exploiter
+        les expressions régulières pour filtrer ses données.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+    <a class="card" href="tuleap-rest-api.html">
+      <span class="tag">TULEAP · API</span>
+      <h3>Exploiter l'API REST de Tuleap</h3>
+      <p>
+        Découvrir les API REST de Tuleap et automatiser
+        les opérations sur les projets, trackers et artefacts.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- DATA & BI -->
+<section class="section">
+  <h2 class="section-title">Data &amp; Business Intelligence</h2>
+
+  <div class="grid">
+
+    <a class="card" href="powerbi-dax.html">
+      <span class="tag">POWER BI · DAX</span>
+      <h3>Power BI : maîtriser DAX par la pratique</h3>
+      <p>
+        Comprendre les mesures, le contexte de filtre et construire
+        des calculs DAX utiles dans des rapports Power BI.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+    <a class="card" href="bases-de-donnees.html">
+      <span class="tag">DATABASE</span>
+      <h3>Bases de données : comprendre et pratiquer</h3>
+      <p>
+        Modélisation, SQL, relations et bonnes pratiques pour
+        construire et exploiter une base de données.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- DEVOPS -->
+<section class="section">
+  <h2 class="section-title">DevOps &amp; développement</h2>
+
+  <div class="grid">
+
+    <a class="card" href="gitlab-cicd.html">
+      <span class="tag">GITLAB · CI/CD</span>
+      <h3>GitLab CI/CD : automatiser ses déploiements</h3>
+      <p>
+        Créer un pipeline CI/CD, automatiser les tests et
+        comprendre les principales étapes d'un déploiement.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+    <a class="card" href="python-pratique.html">
+      <span class="tag">PYTHON</span>
+      <h3>Python par la pratique</h3>
+      <p>
+        Apprendre Python à travers des exercices et des cas
+        concrets orientés développement et automatisation.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+  </div>
+</section>
+
+
+<!-- IA -->
+<section class="section">
+  <h2 class="section-title">IA &amp; nouvelles pratiques</h2>
+
+  <div class="grid">
+
+    <a class="card" href="vibe-coding.html">
+      <span class="tag">IA · DÉVELOPPEMENT</span>
+      <h3>Vibe Coding : développer avec l'IA</h3>
+      <p>
+        Découvrir une nouvelle manière de concevoir, coder,
+        tester et améliorer des applications avec les assistants IA.
+      </p>
+      <span class="arrow">Voir le tutoriel →</span>
+    </a>
+
+  </div>
+</section>
+```
+
+  </main>
+
+  <footer>
+    © 2026 Ecole31 · Tutoriels et ressources pédagogiques
+  </footer>
+
+</body>
+</html>
